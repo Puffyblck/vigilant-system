@@ -17,8 +17,14 @@ This repository documents the setup of a self-hosted GitHub Actions runner on my
      ```
 5. Verified that the runner shows as **Idle** in GitHub.
 
+6. git add .
+git commit -m "Test self-hosted runner"
+git push
+
+
 ## Test Workflow
 I created a simple test pipeline (`.github/workflows/test.yml`) to confirm the runner executes jobs.
+
 
 ```yaml
 name: Self-Hosted Runner Test
