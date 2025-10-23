@@ -1,0 +1,13 @@
+name: Self-Hosted Runner Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run test command
+        run: echo "Runner is working successfully on self-hosted environment!"
